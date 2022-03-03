@@ -2,5 +2,6 @@
 #include "fun.h"
 
 int64_t power(int64_t x, uint16_t n) {
-    return 0;
+    if (n == 1) return x;
+    return x * power(x, n - 1);
 }
